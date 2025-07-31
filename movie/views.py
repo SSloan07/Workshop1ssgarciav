@@ -4,5 +4,5 @@ from django.http import HttpResponse
 def home(request): 
     return render(request,'home.html', {'name':'Simón Sloan García Villa :)'})
 def about(request): 
-    return HttpResponse('<h1>Welcome to About Page</h1>')
+    return render(request,'about.hmtl')
 
