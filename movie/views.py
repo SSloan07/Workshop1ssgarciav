@@ -18,6 +18,10 @@ def home(request):
 
 def about(request): 
     return render(request,'about.html')
+
+def signup(request): 
+    email = request.GET.get('email')
+    return  render(request, 'signup.html',{'email': email})
 def statistics_view (request):
     matplotlib.use('Agg')
     years = Movie.objects.values_list('year', flat=True).distinct().order_by('year') 
