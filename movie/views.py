@@ -71,7 +71,7 @@ def statistics_view (request):
     bar_width = 0.5 
     bar_spacing = 0.5 
     bar_positions = range (len(movie_counts_by_genre))
-    plt.bar(bar_positions, movie_counts_by_genre.values(), width=bar_width, align = "center")
+    plt.bar(bar_positions, movie_counts_by_genre.values(), width=bar_width, align = "center", color="mediumseagreen")
 
     plt.title('Movies per genre(first only)')
     plt.xlabel('Genre')
